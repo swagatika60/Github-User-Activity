@@ -97,3 +97,4 @@ switch (event.type) {
         result.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
     }
 }
+
