@@ -22,6 +22,7 @@
 // .then(data =>console.log("resolved",data))
 // .catch(err => console.log("rejected",err.message))
 
+
 async function getActivity() {
     const username = document.getElementById("username").value;
     const result = document.getElementById("output");
@@ -78,7 +79,7 @@ switch (event.type) {
         break;
 
     case "CreateEvent":
-        message = `✨ Created a new ${event.payload.ref_type || 'repository'} in <strong>${event.repo.name}</strong>`;
+        message = `✨ Created a new ${event.payload.ref_type || 'repository'} in <strong>${event.repo.name} </strong>`;
         break;
 
     default:
